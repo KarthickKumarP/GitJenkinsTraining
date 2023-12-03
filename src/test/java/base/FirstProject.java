@@ -27,6 +27,12 @@ public class FirstProject {
 		Assert.assertEquals(title,"Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in");
 	}
 	
+	@Test(priority=2)
+	public void getCurrentUrl() {
+		String currentUrl = driver.getCurrentUrl();
+		System.out.println(currentUrl);
+	}
+	
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
