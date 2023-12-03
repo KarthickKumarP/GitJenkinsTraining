@@ -33,6 +33,12 @@ public class FirstProject {
 		System.out.println(currentUrl);
 	}
 	
+	@Test(priority=3)
+	public void getPageSource() {
+		boolean contains = driver.getPageSource().contains("Mobiles");
+		System.out.println();
+	}
+	
 	@AfterClass
 	public void tearDown() {
 		driver.quit();
