@@ -36,7 +36,7 @@ public class FirstProject {
 	@Test(priority=3)
 	public void getPageSource() {
 		boolean contains = driver.getPageSource().contains("Mobiles");
-		System.out.println();
+		System.out.println(contains);
 	}
 	
 	@AfterClass
